@@ -25,7 +25,7 @@ private String title;
 private String image;
 @ManyToOne
 private UserModel user;
-private boolean vegitarian;
+private boolean bagitarian;
 private String description;
 private LocalDateTime localTime;
 private List<Long>Likes=new ArrayList<>();

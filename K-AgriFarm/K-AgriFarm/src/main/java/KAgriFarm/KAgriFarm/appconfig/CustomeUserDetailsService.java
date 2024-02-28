@@ -16,7 +16,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.User;
 import java.util.ArrayList;
 import java.util.List;
-
 @Service
 public class CustomeUserDetailsService implements UserDetailsService {
 	@Autowired
@@ -24,16 +23,16 @@ public class CustomeUserDetailsService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) {
-		UserModel user = userRepository.findByEmail(username);
-		if (user == null || user.isBlockUser()) {
-			return null;
-		}
-		List<GrantedAuthority> authorities = new ArrayList<>();
-		return new User(user.getEmail(), user.getPassword(), authorities);
+	        UserModel user = userRepository.findByEmail(username);   
+	        if (user == null) 
+	        {
+	        	return null;
+	        }
+	        List<GrantedAuthority> authorities = new ArrayList<>();
+	        return new User(user.getEmail(), user.getPassword(), authorities);
+	    }
 	}
 
-	public UserModel PassUserData(String username) {
-		UserModel user = userRepository.findByEmail(username);
-		return user;
-	}
-}
+	
+
+

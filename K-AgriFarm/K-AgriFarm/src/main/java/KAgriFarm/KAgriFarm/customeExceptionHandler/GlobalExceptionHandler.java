@@ -21,19 +21,4 @@ public class GlobalExceptionHandler {
 				.body(exception.getMessage());
 		 
 	 }
-	 @ExceptionHandler({TokenValidationException.class})
-	 public ResponseEntity<Object>HandleTokenValidationException(TokenValidationException exception){
-		 return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-				 .body(exception.getMessage());
-	 }
-	 @ExceptionHandler({UserNotFoundException.class})
-	 public ResponseEntity<Object>HandleUserNotFoundExceptionException(UserNotFoundException exception){
-		 return ResponseEntity.status(HttpStatus.NOT_FOUND)
-				 .body(exception.getMessage());
-	 }
-	 @ExceptionHandler({RegistrationDataValidationException.class})
-	 public ResponseEntity<Object>RegistrationDataValidationException(RegistrationDataValidationException exception){
-		 return ResponseEntity.status(HttpStatus.NOT_FOUND)
-				 .body(exception.getMessage());
-	 }
 }
