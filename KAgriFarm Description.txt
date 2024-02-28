@@ -1,0 +1,10 @@
+"KAgriFarm" is a backend application designed to facilitate role-based authentication and various CRUD (Create, Read, Update, Delete) operations for managing posts. 
+The application provides functionalities for user registration, login, and token-based authentication using JWT (JSON Web Token) technology.With KAgriFarm, users can register with the system, providing essential details such as email, password, and full name. Once registered, users can securely log in to the system using their credentials, and upon successful authentication, they receive a JWT token. 
+This token allows them to access authorized endpoints and perform various actions within the application.
+The application implements role-based access control, where different users are assigned specific roles such as OWNER, MANAGER, HR, USER, or VISITORUSER. Each role has different permissions and access levels within the system. For example, an OWNER might have full access to CRUD operations for posts, while a VISITORUSER might only be able to view posts without editing or deleting them.
+KAgriFarm supports CRUD operations for managing posts. Users with appropriate permissions can create new posts, view existing posts, update their own posts, and delete posts as needed. These functionalities are seamlessly integrated into the application, providing a user-friendly interface for managing content.
+Overall, KAgriFarm offers a secure and efficient backend solution for managing user authentication and post management with role-based access control, ensuring data integrity and security in agricultural-related operations.
+
+
+
+
