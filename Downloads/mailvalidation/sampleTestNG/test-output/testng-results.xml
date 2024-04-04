@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-04T10:47:24 IST" name="Default suite" finished-at="2024-04-04T10:47:59 IST" duration-ms="34402">
+    <groups>
+    </groups>
+    <test started-at="2024-04-04T10:47:24 IST" name="Default test" finished-at="2024-04-04T10:47:59 IST" duration-ms="34402">
+      <class name="sampleTestNG.TestSuit.PIMmodule">
+        <test-method is-config="true" signature="LoadApplication()[pri:0, instance:sampleTestNG.TestSuit.PIMmodule@621f89b8]" started-at="2024-04-04T10:47:24 IST" name="LoadApplication" finished-at="2024-04-04T10:47:49 IST" duration-ms="25126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoadApplication -->
+        <test-method signature="EmployeeListTableDataStoring()[pri:0, instance:sampleTestNG.TestSuit.PIMmodule@621f89b8]" started-at="2024-04-04T10:47:49 IST" name="EmployeeListTableDataStoring" finished-at="2024-04-04T10:47:59 IST" duration-ms="9241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmployeeListTableDataStoring -->
+      </class> <!-- sampleTestNG.TestSuit.PIMmodule -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
